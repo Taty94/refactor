@@ -4,7 +4,7 @@ import com.example.practicas.Dominio.Pedido;
 import org.springframework.stereotype.Service;
 
 @Service
-public class NotificadorCorreo {
+public class NotificadorCorreo implements Notificador{
 
     public void enviarConfirmacion(Pedido pedido, double total) {
         System.out.println("Enviando correo a " + pedido.getEmailCliente());

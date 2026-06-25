@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 @Service
-public class GeneradorFactura {
+public class GeneradorFactura  implements FacturaGenerator{
 
     public void generar(Pedido pedido, ResultadoCalculo resultado) {
         String nombreArchivo = "factura_" + pedido.getNombreCliente() + ".txt";
