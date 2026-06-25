@@ -3,6 +3,7 @@ package com.example.practicas.Servicios;
 import com.example.practicas.Dominio.Pedido;
 import com.example.practicas.Dominio.ResultadoCalculo;
 
+@Service
 public class CalculadorPedidos {
 
     private static final double TASA_IMPUESTO = 0.12;

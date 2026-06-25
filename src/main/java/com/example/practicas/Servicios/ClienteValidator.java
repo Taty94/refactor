@@ -1,5 +1,6 @@
 package com.example.practicas.Servicios;
 
+@Service
 public class ClienteValidator {
     public void validar(String nombre, String email) {
         if (nombre == null || nombre.trim().isEmpty()) {
