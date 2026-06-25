@@ -10,5 +10,9 @@ public class PedidoItem {
     private final String nombre;
     private final double precio;
     private final int cantidad;
+
+    public double getSubtotalLinea() {
+        return precio * cantidad;
+    }
 }
 
