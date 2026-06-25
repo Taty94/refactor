@@ -5,12 +5,13 @@ import com.example.practicas.Dominio.Pedido;
 import com.example.practicas.Dominio.ResultadoCalculo;
 import com.example.practicas.Persistencia.PedidoRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.io.FileWriter;
 import java.io.IOException;
 
+@Service
 @RequiredArgsConstructor
-
 public class GestorPedidos{
     private final ClienteValidator validator;
     private final CalculadorPedidos calculator;

@@ -1,5 +1,7 @@
 package com.example.practicas.Servicios;
 
+import org.springframework.stereotype.Service;
+
 @Service
 public class ClienteValidator {
     public void validar(String nombre, String email) {

@@ -2,6 +2,7 @@ package com.example.practicas.Servicios;
 
 import com.example.practicas.Dominio.Pedido;
 import com.example.practicas.Dominio.ResultadoCalculo;
+import org.springframework.stereotype.Service;
 
 @Service
 public class CalculadorPedidos {
