@@ -1,8 +1,8 @@
-package com.example.practicas.infrastructure.adapters.notification;
+package com.example.practicas.application.usecases.notification;
 
 import com.example.practicas.domain.model.Pedido;
 import com.example.practicas.domain.model.ResultadoCalculo;
 
-public interface FacturaGenerator {
+public interface IFacturaGenerator {
     void generar(Pedido pedido, ResultadoCalculo resultado);
 }
