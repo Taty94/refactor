@@ -12,12 +12,12 @@ import java.io.IOException;
 public class GeneradorFactura  implements IFacturaGenerator {
 
     public void generar(Pedido pedido, ResultadoCalculo resultado) {
-        String nombreArchivo = "factura_" + pedido.getNombreCliente() + ".txt";
+        String nombreArchivo = "factura_" + pedido.getNombre() + ".txt";
         try (FileWriter writer = new FileWriter(nombreArchivo)) {
             writer.write("FACTURA\n");
-            writer.write("Cliente: " + pedido.getNombreCliente() + "\n");
-            writer.write("Email: " + pedido.getEmailCliente() + "\n");
-            for (var item : pedido.getItems()) {
+            writer.write("Cliente: " + pedido.getNombre() + "\n");
+            writer.write("Email: " + pedido.getEmail() + "\n");
+            for (var item : pedido.getProductos()) {
                 writer.write(item.getNombre() + " x" + item.getCantidad()
                         + " = $" + item.getSubtotalLinea() + "\n");
             }
