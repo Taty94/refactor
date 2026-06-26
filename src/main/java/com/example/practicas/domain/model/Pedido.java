@@ -9,8 +9,8 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 public class Pedido {
-    private  String nombreCliente;
-    private  String emailCliente;
-    private  List<PedidoItem> items;
+    private  String nombre;
+    private  String email;
+    private  List<PedidoItem> productos;
     private  TipoCliente tipoCliente;
 }
