@@ -1,4 +1,4 @@
-package com.example.practicas.core.entity;
+package com.example.practicas.domain.model;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
