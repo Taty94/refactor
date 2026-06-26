@@ -20,14 +20,14 @@ public class GestorPedidos{
 
     public void procesarPedido(Pedido pedido) {
 
-        validator.validar(pedido.getNombreCliente(), pedido.getEmailCliente());
+        validator.validar(pedido.getNombre(), pedido.getEmail());
         ResultadoCalculo resultado = calculator.calcular(pedido);
         repository.guardar(pedido, resultado.getTotal());
         facturaGenerator.generar(pedido, resultado);
         notificador.enviarConfirmacion(pedido, resultado.getTotal());
     }
     public void cancelarPedido(Pedido pedido, int idPedido) {
-        validator.validar(pedido.getNombreCliente(), pedido.getEmailCliente());
+        validator.validar(pedido.getNombre(), pedido.getEmail());
         repository.eliminar(idPedido);
         notificador.enviarCancelacion(pedido, idPedido);
     }

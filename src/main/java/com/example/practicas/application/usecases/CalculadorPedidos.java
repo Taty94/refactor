@@ -10,7 +10,7 @@ public class CalculadorPedidos {
     private static final double TASA_IMPUESTO = 0.12;
 
     public ResultadoCalculo calcular(Pedido pedido) {
-        double subtotal = pedido.getItems().stream()
+        double subtotal = pedido.getProductos().stream()
                 .mapToDouble(item -> item.getPrecio() * item.getCantidad())
                 .sum();
 
