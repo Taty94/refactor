@@ -1,6 +1,8 @@
-package com.example.practicas.Servicios;
+package com.example.practicas.domain.service;
 
-public class DescuentoRegular implements DescuentoStrategy {
+import com.example.practicas.domain.IDescuentoStrategy;
+
+public class DescuentoRegular implements IDescuentoStrategy {
     @Override
     public double calcular(double subtotal) {
         return subtotal * 0.05;
