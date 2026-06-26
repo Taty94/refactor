@@ -1,12 +1,12 @@
-package com.example.practicas.infra.persistence;
+package com.example.practicas.infrastructure.persistence;
 
-import com.example.practicas.core.entity.Pedido;
-import com.example.practicas.core.repository.PedidoRepository;
-import com.example.practicas.infra.persistence.entity.PedidoEntity;
+import com.example.practicas.domain.model.Pedido;
+import com.example.practicas.domain.repository.IPedidoRepository;
+import com.example.practicas.infrastructure.persistence.entity.PedidoEntity;
 import org.springframework.stereotype.Component;
 
 @Component
-public class PedidoRepositoryImpl implements PedidoRepository {
+public class PedidoRepositoryImpl implements IPedidoRepository {
 
     private final PedidoJpaRepository jpaRepository;
 
