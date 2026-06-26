@@ -1,5 +1,6 @@
-package com.example.practicas.infrastructure.notification;
+package com.example.practicas.infrastructure.adapters.notification;
 
+import com.example.practicas.application.usecases.notification.IFacturaGenerator;
 import com.example.practicas.domain.model.Pedido;
 import com.example.practicas.domain.model.ResultadoCalculo;
 import org.springframework.stereotype.Service;
@@ -8,7 +9,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 @Service
-public class GeneradorFactura  implements FacturaGenerator{
+public class GeneradorFactura  implements IFacturaGenerator {
 
     public void generar(Pedido pedido, ResultadoCalculo resultado) {
         String nombreArchivo = "factura_" + pedido.getNombreCliente() + ".txt";

@@ -1,10 +1,11 @@
-package com.example.practicas.infrastructure.notification;
+package com.example.practicas.infrastructure.adapters.notification;
 
+import com.example.practicas.application.usecases.notification.INotificador;
 import com.example.practicas.domain.model.Pedido;
 import org.springframework.stereotype.Service;
 
 @Service
-public class NotificadorCorreo implements Notificador{
+public class NotificadorCorreo implements INotificador {
 
     public void enviarConfirmacion(Pedido pedido, double total) {
         System.out.println("Enviando correo a " + pedido.getEmailCliente());
