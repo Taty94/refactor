@@ -1,4 +1,4 @@
-package com.example.practicas.adapters.in.rest.mapper;
+package com.example.practicas.infrastructure.rest.mapper;
 
 public class PedidoMapper {
 }

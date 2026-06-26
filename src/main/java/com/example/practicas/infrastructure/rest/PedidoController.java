@@ -1,6 +1,6 @@
-package com.example.practicas.infra.controller;
+package com.example.practicas.infrastructure.rest;
 
-import com.example.practicas.core.entity.Pedido;
+import com.example.practicas.domain.model.Pedido;
 import com.example.practicas.core.usecase.GestorPedidos;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

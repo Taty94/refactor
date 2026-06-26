@@ -1,4 +1,4 @@
-package com.example.practicas.adapters.in.rest.dto;
+package com.example.practicas.infrastructure.rest.dto;
 
 public class PedidoRequest {
 }
