@@ -17,8 +17,8 @@ public class PedidoRepositoryImpl implements IPedidoRepository {
     @Override
     public void guardar(Pedido pedido, double total) {
         PedidoEntity entity = new PedidoEntity(
-                pedido.getNombreCliente(),
-                pedido.getEmailCliente(),
+                pedido.getNombre(),
+                pedido.getEmail(),
                 total,
                 pedido.getTipoCliente().name()
         );

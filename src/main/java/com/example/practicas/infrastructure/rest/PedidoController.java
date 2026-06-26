@@ -6,10 +6,7 @@ import com.example.practicas.infrastructure.rest.dto.PedidoRequest;
 import com.example.practicas.infrastructure.rest.mapper.PedidoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/pedidos")
@@ -23,5 +20,13 @@ public class PedidoController {
         Pedido pedido = mapper.toDomain(request);
         gestor.procesarPedido(pedido);
         return ResponseEntity.ok("Pedido procesado");
+    }
+
+    @DeleteMapping("/{idPedido}")
+    public ResponseEntity<String> cancelar(@PathVariable int idPedido,
+                                           @RequestBody PedidoRequest request) {
+        Pedido pedido = mapper.toDomain(request);
+        gestor.cancelarPedido(pedido, idPedido);
+        return ResponseEntity.ok("Pedido cancelado");
     }
 }

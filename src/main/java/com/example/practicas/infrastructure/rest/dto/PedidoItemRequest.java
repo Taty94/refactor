@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PedidoItemRequest {
-    private String nombreProducto;
-    private double precioProducto;
+    private String nombre;
+    private double precio;
     private int cantidad;
 }
