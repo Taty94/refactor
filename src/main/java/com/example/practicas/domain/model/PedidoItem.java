@@ -1,4 +1,4 @@
-package com.example.practicas.Dominio;
+package com.example.practicas.core.entity;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

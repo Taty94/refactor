@@ -1,4 +1,4 @@
-package com.example.practicas.Servicios;
+package com.example.practicas.application.usecases;
 
 import org.springframework.stereotype.Service;
 

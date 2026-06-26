@@ -1,7 +1,8 @@
-package com.example.practicas.Persistencia;
+package com.example.practicas.infra.persistence;
 
-import com.example.practicas.Dominio.Pedido;
-import com.example.practicas.Persistencia.Entity.PedidoEntity;
+import com.example.practicas.core.entity.Pedido;
+import com.example.practicas.core.repository.PedidoRepository;
+import com.example.practicas.infra.persistence.entity.PedidoEntity;
 import org.springframework.stereotype.Component;
 
 @Component

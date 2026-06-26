@@ -1,12 +1,10 @@
-package com.example.practicas.Servicios;
+package com.example.practicas.application.usecases;
 
-import com.example.practicas.Dominio.Pedido;
-import com.example.practicas.Dominio.ResultadoCalculo;
-import com.example.practicas.Notificacion.FacturaGenerator;
-import com.example.practicas.Notificacion.GeneradorFactura;
-import com.example.practicas.Notificacion.Notificador;
-import com.example.practicas.Notificacion.NotificadorCorreo;
-import com.example.practicas.Persistencia.PedidoRepository;
+import com.example.practicas.application.usecases.notification.IFacturaGenerator;
+import com.example.practicas.application.usecases.notification.INotificador;
+import com.example.practicas.domain.model.Pedido;
+import com.example.practicas.domain.model.ResultadoCalculo;
+import com.example.practicas.domain.repository.IPedidoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,9 +14,9 @@ import org.springframework.stereotype.Service;
 public class GestorPedidos{
     private final ClienteValidator validator;
     private final CalculadorPedidos calculator;
-    private final PedidoRepository repository;
-    private final FacturaGenerator facturaGenerator;
-    private final Notificador notificador;
+    private final IPedidoRepository repository;
+    private final IFacturaGenerator facturaGenerator;
+    private final INotificador notificador;
 
     public void procesarPedido(Pedido pedido) {
 

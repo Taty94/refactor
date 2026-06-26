@@ -1,4 +1,4 @@
-package com.example.practicas.Dominio.Enums;
+package com.example.practicas.core.entity.enums;
 
 public enum TipoCliente {
     VIP,

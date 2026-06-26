@@ -1,4 +1,4 @@
-package com.example.practicas.Persistencia.Entity;
+package com.example.practicas.infra.persistence.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

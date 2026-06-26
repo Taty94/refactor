@@ -1,7 +1,7 @@
-package com.example.practicas.Servicios;
+package com.example.practicas.application.usecases;
 
-import com.example.practicas.Dominio.Pedido;
-import com.example.practicas.Dominio.ResultadoCalculo;
+import com.example.practicas.domain.model.Pedido;
+import com.example.practicas.domain.model.ResultadoCalculo;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,6 +1,6 @@
-package com.example.practicas.Notificacion;
+package com.example.practicas.infrastructure.adapters.notification;
 
-import com.example.practicas.Dominio.Pedido;
+import com.example.practicas.domain.model.Pedido;
 
 public interface Notificador {
     void enviarConfirmacion(Pedido pedido, double total);

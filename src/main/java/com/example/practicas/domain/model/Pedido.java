@@ -1,7 +1,6 @@
-package com.example.practicas.Dominio;
+package com.example.practicas.core.entity;
 
-import com.example.practicas.Dominio.Enums.TipoCliente;
-import lombok.AllArgsConstructor;
+import com.example.practicas.core.entity.enums.TipoCliente;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

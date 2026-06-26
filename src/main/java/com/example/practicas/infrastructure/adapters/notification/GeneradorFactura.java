@@ -1,7 +1,7 @@
-package com.example.practicas.Notificacion;
+package com.example.practicas.infrastructure.notification;
 
-import com.example.practicas.Dominio.Pedido;
-import com.example.practicas.Dominio.ResultadoCalculo;
+import com.example.practicas.domain.model.Pedido;
+import com.example.practicas.domain.model.ResultadoCalculo;
 import org.springframework.stereotype.Service;
 
 import java.io.FileWriter;

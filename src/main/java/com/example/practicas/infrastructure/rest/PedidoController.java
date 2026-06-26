@@ -1,7 +1,7 @@
-package com.example.practicas.Controller;
+package com.example.practicas.infra.controller;
 
-import com.example.practicas.Dominio.Pedido;
-import com.example.practicas.Servicios.GestorPedidos;
+import com.example.practicas.core.entity.Pedido;
+import com.example.practicas.core.usecase.GestorPedidos;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

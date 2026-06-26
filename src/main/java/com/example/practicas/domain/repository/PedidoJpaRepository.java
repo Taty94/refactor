@@ -1,6 +1,6 @@
-package com.example.practicas.Persistencia;
+package com.example.practicas.infrastructure.persistence;
 
-import com.example.practicas.Persistencia.Entity.PedidoEntity;
+import com.example.practicas.infrastructure.persistence.entity.PedidoEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
